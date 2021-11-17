@@ -4,9 +4,13 @@
 <div class="container p-5 mb-4 bg-light rounded-3">
     <div class="row">
         <div class="col-12">
-            <h1 class="lead display-1 pb-5">This is the graphs page!</h1>
-            <p class="lead pb-5">nothing to see here yet :-(</p>
+            <canvas id="chart-progressive-line"></canvas>
         </div>
     </div>                
 </div>
+{% endblock %}
+{% block footer %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="{{ url_for('static', filename='js/Utils.js') }}"></script>
+<script src="{{ url_for('static', filename='js/graphs.js') }}"></script>
 {% endblock %}
