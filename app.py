@@ -6,17 +6,17 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-@app.route("/left-button")
-def left_button():
-    return "You clicked the left button!"
+@app.route("/graphs")
+def graph():
+    return render_template("graphs.html")
 
-@app.route("/middle-button")
-def middle_button():
-    return "You clicked the middle button!"
+@app.route("/maps")
+def maps():
+    return render_template("maps.html")
 
-@app.route("/right-button")
-def right_button():
-    return "You clicked the right button!"
+@app.route("/carousel")
+def carousel():
+    return render_template("carousel.html")
     
 if __name__ == "__main__":
     app.run(debug=True)
