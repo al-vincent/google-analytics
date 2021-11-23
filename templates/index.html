@@ -12,19 +12,19 @@
     <!-- buttons -->
     <div class="row">
         <div class="col-4">
-            <button id="btn-left"  type="button" class="btn btn-lg btn-outline-danger rounded-pill">
+            <button id="id-btn-red"  type="button" class="btn btn-lg btn-outline-danger rounded-pill">
                 Click me!!
             </button>
         </div>
         
         <div class="col-4">
-            <button id="btn-right"  type="button" class="btn btn-lg btn-outline-warning rounded-pill">
+            <button id="id-btn-yellow"  type="button" class="btn btn-lg btn-outline-warning rounded-pill">
                 No, click me!!
             </button>
         </div>
 
         <div class="col-4">
-            <button id="btn-left"  type="button" class="btn btn-lg btn-outline-success rounded-pill">
+            <button id="id-btn-green"  type="button" class="btn btn-lg btn-outline-success rounded-pill">
                 No, me!!
             </button>
         </div>
@@ -39,4 +39,11 @@
     </div>
     
 </div>
+{% endblock %}
+{% block footer %}
+    <!-- inherit existing css  -->
+    {{ super() }}
+    
+    <!-- import index.js -->
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
 {% endblock %}
