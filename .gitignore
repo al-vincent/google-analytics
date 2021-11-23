@@ -61,6 +61,8 @@ ipython_config.py
 # pyenv
 .python-version
 
+# vscode
+.vscode/
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
