@@ -54,9 +54,21 @@ function main() {
     };
 
     const myChart = new Chart(
-        document.getElementById('chart-bar'),
+        document.getElementById('id-chart-bar'),
         config
     );
 }
 
-main()
+document.onload = main();
+
+let myChart = document.getElementById("id-chart-bar");
+myChart.addEventListener("click", function(){
+    // simple debug message
+    console.log("chart object clicked");
+
+    // send the Google analytics event message (maybe...)
+    gtag("event", "chart_clicked", {
+        "event_category": "engagement",
+        "event_label": "content_type"
+    });
+});
