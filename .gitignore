@@ -76,6 +76,10 @@ ENV/
 env.bak/
 venv.bak/
 
-
 # Pyre type checker
 .pyre/
+
+# app-specific
+chromedriver.exe
+docs/
+poll_website.py
