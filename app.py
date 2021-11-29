@@ -17,7 +17,7 @@ def graphs():
     return render_template(
         "graphs.html",
         nav_id=cfg.TEMPLATE["NAVBAR"]["ID"],
-        chart_id=cfg.GRAPHS["ID"]
+        graph_id=cfg.GRAPHS["ID"]
     )
 
 @app.route("/maps")
