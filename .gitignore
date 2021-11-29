@@ -82,4 +82,3 @@ venv.bak/
 # app-specific
 chromedriver.exe
 docs/
-poll_website.py
