@@ -54,14 +54,14 @@ function main() {
     };
 
     const myChart = new Chart(
-        document.getElementById('id-chart-bar'),
+        document.getElementById('id-graph-bar'),
         config
     );
 }
 
 document.onload = main();
 
-let myChart = document.getElementById("id-chart-bar");
+let myChart = document.getElementById("id-graph-bar");
 myChart.addEventListener("click", function(){
     // simple debug message
     console.log("chart object clicked");
